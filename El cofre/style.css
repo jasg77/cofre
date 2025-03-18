@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url(imagenes/cofre.jpeg); /* Fondo de pantalla */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    background-attachment: fixed; /* Mantiene la imagen fija */
+    margin: 0; /* Elimina márgenes predeterminados */
+    height: 100vh; /* Asegura que cubra toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+#ruleta {
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    margin: 20px auto;
+    display: flex;
+}
+
+.rueda {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 2em;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+}
+
+.numero {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 2em;
+    border: 1px solid #ccc;
+}
+
+#resultado img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
